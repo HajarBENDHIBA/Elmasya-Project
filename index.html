@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Welcome To Elmasya Store - Explore and find your perfect piece .">
+    <meta name="keywords" content="ecommerce, shop, products, online store, jewellery, ring, bijoux">
+    <title>Elmasya</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/diamant.png" type="image/x-icon">
+</head>
+<body>
+  <nav class="p-4" style="background-color: #A79776">
+    <!-- The rest of your navbar structure -->
+    <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+<a href="index.html" class="flex items-center space-x-2">
+    <img src="images/logo2.png" alt="Elmasya Logo" class="h-12 w-auto mx-8">
+</a>
+        <!-- Navbar Links and Search Bar -->
+        <div class="space-x-6 hidden md:flex items-center">
+            <a href="index.html" class="text-white hover:text-blue-300">Home</a>
+            <a href="products.html" class="text-white hover:text-blue-300">Products</a>
+            <a href="cart.html" class="text-white hover:text-blue-300">Cart</a>
+            <a href="contact.html" class="text-white hover:text-blue-300">Contact</a>
+
+            <!-- Search Bar -->
+            <div class="relative">
+                <input type="text" class="bg-white text-black px-4 py-2 rounded-lg border-2 border-[#334418] focus:outline-none focus:ring-2 focus:ring-[#AEA38E] placeholder-gray-500" placeholder="Search...">
+                <button class="absolute right-0 top-0 mt-2 mr-2 text-white px-4 py-2 rounded-lg hover:bg-[#AEA38E] transition duration-300">
+                    Search
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="text-white md:hidden" id="menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden" id="mobile-menu">
+        <a href="index.html" class="block px-4 py-2 text-white hover:bg-blue-700">Home</a>
+        <a href="products.html" class="block px-4 py-2 text-white hover:bg-blue-700">Products</a>
+        <a href="cart.html" class="block px-4 py-2 text-white hover:bg-blue-700">Cart</a>
+        <a href="contact.html" class="block px-4 py-2 text-white hover:bg-blue-700">Contact</a>
+    </div>
+</nav>
+
+
+    
+
+<section class="relative">
+    <!-- Background Image with Blur -->
+    <div class="relative">
+        <img src="images/background.jpg" alt="Background" class="w-full h-96 object-cover filter blur-sm">
+    
+    <!-- Overlay (white with transparency) -->
+    <div class="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
+
+    <!-- Title and Button on the Image -->
+    <div class="absolute inset-0 flex items-center justify-center text-center text-white px-4 py-32">
+        <div>
+            <h1 class="text-4xl font-semibold sm:text-5xl mb-8"> Welcome To
+                <strong class="block font-bold mt-2">Elmasya</strong></h1>
+            <p class="text-2xl mt-8 max-w-lg sm:text-2xl/relaxed mb-8 font-sans">
+                Explore our exquisite collection of pearls and diamonds to find your perfect piece.</p>
+            <div class="mt-2 flex flex-wrap gap-4 justify-center">
+                <div class="mt-2 flex flex-wrap gap-4 justify-center">
+                 <a href="products.html" class="border block w-full rounded px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 hover:scale-105 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto transition-all duration-300">
+                        Shop Now</a>
+                <a href="#" class="border block w-full rounded px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 hover:scale-105 focus:outline-none focus:ring active:text-rose-500 sm:w-auto transition-all duration-300">
+                        Learn More </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+        <div class="relative flex justify-center items-center mt-12 mb-4">
+            <!-- Gradient line behind the text -->
+            <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"></div>
+            <!-- Title text with a background to stand out from the line -->
+            <h1 class="relative z-10 text-5xl font-thin text-gray-800 tracking-wide bg-white px-6 drop-shadow-lg">
+              Our Collection
+            </h1>
+          </div>
+        
+        <!-- Bordered Items below the Image -->
+        <div class="container mx-auto px-4 mt-16 text-gray-800">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Border Item 1 -->
+                <div class="border  p-4 rounded-lg hover:shadow-lg transition duration-300 ease-in-out">
+                  <a href="products.html#ring">   
+                  <img src="images/section/section1.jpg" alt="Image 1" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-center">Ring</h3></a> 
+                </div>
+
+                <!-- Border Item 2 -->
+                <div class="border p-4 rounded-lg hover:shadow-lg transition duration-300 ease-in-out">
+                  <a href="products.html#earing"> 
+                  <img src="images/section/section2.jpg" alt="Image 2" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-center text-[#334418]">Earing</h3></a> 
+                </div>
+
+                <!-- Border Item 3 -->
+                <div class="border p-4 rounded-lg hover:shadow-lg transition duration-300 ease-in-out">
+                  <a href="products.html#necklace"> 
+                  <img src="images/section/section3.jpg" alt="Image 3" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-center text-[#334418]">Necklace</h3></a> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="cta-section" style="display: none;" class="flex justify-center items-center fixed inset-0 bg-black bg-opacity-50 z-50">
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+            <!-- The box with the white background and border -->
+            <div class="bg-white p-8 md:p-12 lg:px-16 lg:py-24 border border-gray-200 rounded-lg max-w-2xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex flex-col justify-center items-center">
+                        <h2 class="text-2xl font-bold text-gray-800 md:text-3xl mb-4">
+                           Welcome To Elmasya
+                        </h2>
+    
+                        <p class="text-gray-600 mb-6">
+                            Explore our curated collection of luxurious pearls and diamonds, each piece reflecting the perfect blend of tradition and modern elegance. Crafted with precision and passion, our jewelry is designed to celebrate the beauty of life’s most precious moments.
+                        </p>
+    
+                        <div class="mt-4 md:mt-8">
+                            <a href="#" class="inline-block rounded border border-white bg-white px-12 py-3 text-sm font-medium text-blue-500 transition hover:bg-transparent hover:text-gray-700 focus:outline-none focus:ring focus:ring-gray-400">
+                                Explore Our Collection</a>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <img alt="image" src="images/3S.jpg" class="h-40 w-full object-cover sm:h-56 md:h-full rounded-lg"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="bg-[#334418] text-white py-4">
+      <div class="container mx-auto text-center">
+          <p class="text-gray-400">© 2024 Elmasya. All rights reserved.</p>
+      </div>
+  </footer>
+  
+    <script src="script.js"></script>
+</body>
+</html>
